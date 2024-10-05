@@ -12,7 +12,7 @@ $ pip install -r requirements.txt
 
 Run the script to detect:
 ```shell
-$ python notebooklm_detector --action predict --file_path [filename].mp3
+$ python notebooklm_detector.py --action predict --file_path [filename].mp3
 ```
 
 ## Train
@@ -24,5 +24,5 @@ And put human-produced audio files in datasets/human/ folder.
 
 Step 2: Run the script to train:
 ```shell
-$ python notebooklm_detector --action train --dataset_path datasets
+$ python notebooklm_detector.py --action train --dataset_path datasets
 ```
