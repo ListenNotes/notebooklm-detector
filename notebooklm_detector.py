@@ -100,12 +100,3 @@ if __name__ == '__main__':
         else:
             result = predict(args.file_path, model_path=args.model_path)
             print(f'The audio is: {result}')
-
-    # Train the model on a dataset of AI vs human audio samples
-    # dataset_path = './datasets'  # Replace with the actual path to the dataset
-    # train_model(dataset_path)
-
-    # Example prediction on a new audio file
-    # file_path = './test/a.mp3'  # Replace with the actual path to the audio file
-    # result = predict(file_path)
-    # print(f'The audio is: {result}')
