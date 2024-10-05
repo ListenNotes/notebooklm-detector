@@ -45,7 +45,7 @@ def load_dataset(dataset_path):
 
 
 # Train and save the model
-def train_model(dataset_path, model_save_path='ai_speech_detector.pkl'):
+def train_model(dataset_path, model_save_path='model.pkl'):
     X, y = load_dataset(dataset_path)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
@@ -66,7 +66,7 @@ def train_model(dataset_path, model_save_path='ai_speech_detector.pkl'):
 
 
 # Load the model and make predictions
-def predict(file_path, model_path='ai_speech_detector.pkl'):
+def predict(file_path, model_path='model.pkl'):
     with open(model_path, 'rb') as f:
         scaler, model = pickle.load(f)
 
@@ -85,7 +85,7 @@ if __name__ == '__main__':
                         help='Action to perform: train or predict')
     parser.add_argument('--dataset_path', type=str, help='Path to the dataset for training')
     parser.add_argument('--file_path', type=str, help='Path to the audio file for prediction')
-    parser.add_argument('--model_path', type=str, default='ai_speech_detector.pkl', help='Path to the model file')
+    parser.add_argument('--model_path', type=str, default='model.pkl', help='Path to the model file')
 
     args = parser.parse_args()
 
