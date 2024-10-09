@@ -11,6 +11,7 @@ However, after a week of back-and-forth emails, we lost patience.
 It's now Friday (Oct 4, 2024), and since we won't hear back from the NotebookLM team until next week,
 we decided to put together this simple script. Luckily, it seems to work!
 
+[Notebook LM: A threat to the Podcasting World](https://www.listennotes.com/blog/notebook-lm-a-threat-to-the-podcasting-world-79/)
 
 ## Detection
 
