@@ -35,7 +35,8 @@ def load_dataset(dataset_path):
         for file in files:
             if file.endswith('.wav') or file.endswith('.mp3') or file.endswith('.mp4'):
                 file_path = os.path.join(root, file)
-                label = 'ai' if 'ai' in file_path.lower() else 'human'
+                last_folder = os.path.basename(os.path.dirname(file_path))
+                label = 'ai' if 'ai' in last_folder.lower() else 'human'
                 print(f'file: {file} / file_path: {file_path} => {label}')
                 feature = extract_features(file_path)
                 if feature is not None:
